@@ -4,6 +4,12 @@ import BloodPressure from '../components/forecast/BloodPressure';
 import RespiratoryRate from '../components/forecast/RespiratoryRate';
 import Summary from '../components/forecast/Summary';
 
+const styles = {
+  container: {
+    width: '99.99%'
+  }
+}
+
 class ForecastPage extends React.Component {
   constructor(props) {
     super(props);
@@ -17,7 +23,7 @@ class ForecastPage extends React.Component {
 
   render() {
     return (
-      <div>
+      <div style={styles.container}>
         <div className="row m-0">
           <Summary />
           <div className="col-xs-12 col-md-6 p-0">
